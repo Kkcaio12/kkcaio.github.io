@@ -1,0 +1,139 @@
+header > nav{
+    display: flex;
+    justify-content: space-between;
+    background-color: #A8CFF0;
+    align-items: center;
+}
+header ul{
+    display: flex;
+    min-width: 300px;
+    justify-content: space-around;
+    align-items: center;
+}
+
+header ul > li{
+    list-style-type: none;
+}
+
+a{
+    text-decoration: none;
+    color: rgb(14, 14, 14);
+}
+
+#principal a{
+    display: block;
+    border-radius: 30px;
+}
+
+a:hover{
+    color: #607a8f;
+}
+#principal a:link, #principal a:visited {
+    background-color: #b5d9f7;
+    color: rgb(14, 14, 14);
+    padding: 14px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+  }
+  
+#principal a:hover,#principal a:active {
+    background-color: #A8CFF0;
+  }
+
+body{
+    background-color: #cce9f0;
+}
+
+#principal{
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+   margin: 30px 0
+}
+
+#principal > div{
+    max-width: 300px;
+}
+
+#principal p{
+    margin: 10px 0;
+}
+
+@media (max-width: 768px){
+    #principal, header > nav, header ul{
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+
+#musicas{
+    display: grid;
+    grid-area: 1 / 1 / 2 / 2;
+}
+
+.card{
+    display: grid;
+    grid-template-rows: 30px repeat(150px, 3) 30px;
+    grid-template-columns: 30px 190px 30px ;
+    border: 2px solid #A8CFF0;
+    border-radius: 30px;
+    width: 300px;
+    height: 400px;
+    margin: 0 20px
+}
+
+#card2{
+    height: 400px;
+    width: 450px;
+}
+
+.card>h2{
+    grid-area: 2/2/3/3;
+}
+
+.card>img{
+    grid-area: 3/2/4/3;
+    margin:auto;
+}
+
+.card>p{
+    grid-area: 4/2/5/3;
+}
+
+.itens{
+    background-color: #9ec9ec;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 40px 20px
+
+}
+#formacao>div{
+    min-width: 70%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 30px;
+}
+
+#musicas{
+    display: grid;
+    grid-template-columns: 50% 50% ;
+    background-color: #9ec9ec;
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px 0;
+}
+
+#plataformas{
+    background-color: #A8CFF0;
+}
+#tecnologias{
+    background-color: #9ec9ec;
+}
